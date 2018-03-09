@@ -6,8 +6,6 @@ require 'sys'
 
 function test(testJointWorld, testRefPt, testName, db_type)
     
-    fp_result = io.open("result/result" .. tostring(epoch) .. ".txt","w")
-        
     model:evaluate()
     testDataSz = #testName
 
@@ -35,7 +33,8 @@ function test(testJointWorld, testRefPt, testName, db_type)
             local depthimage = load_depthmap(input_name)
 
             refPts[i-t+1] = refPt
-           
+            
+            --canceling data augmentation (it was prepared before)
             newSz = 100
             angle = 0
             local trans = torch.Tensor(worldDim)
@@ -58,10 +57,12 @@ function test(testJointWorld, testRefPt, testName, db_type)
         for bid = 1,curBatchNum do
             xyzOutput[bid] = warp2continuous(xyzOutput[bid],refPts[bid])           
         end
+
+        --this is 3D joint coordinates (final output) in world coordinate system
+        --you need to convert them into pixel coordinate system if needed
         xyzOutput = xyzOutput:type('torch.CudaLongTensor')
         
     end
     
-    fp_result:close()
 
 end

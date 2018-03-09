@@ -26,8 +26,8 @@ function train()
     model:training()
     for n, sample in DataLoad() do 
         
-        inputs = sample[1]
-        heatmaps = sample[2]
+        inputs = sample[1] --voxelized depth map
+        heatmaps = sample[2] --3D heatmap
         
         inputs = inputs:type('torch.CudaTensor')
         collectgarbage() 
@@ -56,6 +56,8 @@ function train()
         
         if iter % loss_display_interval == 0 then
             print("epoch: " .. epoch .. "/" .. epochLimit .. " batch: " ..  n*batchSz .. "/" .. trainSz .. " loss: " .. tot_error/iter)
+            tot_err=r = 0
+            iter = 0
         end
     
     end
