@@ -87,16 +87,17 @@ We trained and tested our model on the four 3D hand pose estimation and one 3D h
     th rum_me.lua
     ```
 
-* There are some optional arguments you can adjust in the config.lua. 
+* There are some optional configurations you can adjust in the config.lua. 
 
 
 # Results
-Here we provide trained model, precomputed centers and estimated 3D coordinates of testing set.
-* ICVL Hand Poseture Dataset [model] [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/estimation/result.txt)]
-* NYU Hand Pose Dataset [model] [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/estimation/result.txt)]
-* MSRA Hand Pose Dataset [model] [center] [estimation]
-* ITOP Human Pose Dataset (front-view) [model] [center] [estimation]
-* ITOP Human Pose Dataset (side-view) [model] [center] [estimation]
+Here we provide the trained models, precomputed centers, and estimated 3D coordinates.
+The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates.
+* ICVL Hand Poseture Dataset [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/coordinate/result.txt)]
+* NYU Hand Pose Dataset [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/coordinate/result.txt)]
+* MSRA Hand Pose Dataset [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/coordinate/result.txt)]
+* ITOP Human Pose Dataset (front-view) [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/coordinate/result.txt)]
+* ITOP Human Pose Dataset (side-view) [center] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/coordinate/result.txt)]
 
 We used [awesome-hand-pose-estimation ](https://github.com/xinghaochen/awesome-hand-pose-estimation) to evaluate the accuracy of the V2V-PoseNet on the ICVL, NYU and MSRA dataset.
 
