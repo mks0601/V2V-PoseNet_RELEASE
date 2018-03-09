@@ -195,7 +195,7 @@ function init_thread(jointWorld,RefPt,allName,db)
         require 'cudnn'
         torch.setdefaulttensortype('torch.FloatTensor')
         dofile("data/" .. db .. "/data.lua")
-        dofile("param.lua")
+        dofile("config.lua")
         dofile("util.lua")
     end
     local function main(idx)
