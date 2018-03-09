@@ -96,6 +96,9 @@ Here we provide the precomputed centers, and estimated 3D coordinates.
 The precomputed centers are obtained by training the network from [DeepPrior++ ](https://arxiv.org/pdf/1708.08325.pdf). Each line represents 3D world coordinate of each frame.
 
 The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates.
+
+If you want a pretrained model, please contact me.
+
 * ICVL Hand Poseture Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/coordinate/result.txt)]
 * NYU Hand Pose Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/coordinate/result.txt)]
 * MSRA Hand Pose Dataset [[center](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/center/center.tar.gz)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/coordinate/result.txt)]
