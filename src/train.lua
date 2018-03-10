@@ -56,7 +56,7 @@ function train()
         
         if iter % loss_display_interval == 0 then
             print("epoch: " .. epoch .. "/" .. epochLimit .. " batch: " ..  n*batchSz .. "/" .. trainSz .. " loss: " .. tot_error/iter)
-            tot_err=r = 0
+            tot_error = 0
             iter = 0
         end
     
