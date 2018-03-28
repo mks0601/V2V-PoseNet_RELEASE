@@ -6,7 +6,11 @@
 --ICVL
 --NYU
 --MSRA
---HANDS2017
+--side
+--top
+
+--side: ITOP side-view
+--top: ITOP top-view
 
 mode = "train"
 db = "ICVL"
@@ -21,7 +25,6 @@ defaultGPU = 1
 
 inputDim = 1
 worldDim = 3
-distThr = 20
 bkgValue = 0
 
 originalSz = 96

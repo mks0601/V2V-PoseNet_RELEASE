@@ -4,16 +4,11 @@ require 'image'
 require 'os'
 require 'sys'
 
-function test(testJointWorld, testRefPt, testName, db_type)
+function test(testRefPt, testName)
     
     model:evaluate()
     testDataSz = #testName
-
-    if db_type == 'train' then
-        print('==> testing on trainingset:')
-    elseif db_type == 'test' then
-        print('==> testing on testingset:')
-    end
+    print('==> testing:')
     
     inputs = torch.Tensor(batchSz,inputDim,croppedSz,croppedSz,croppedSz):fill(bkgValue)
     inputs_cuda = torch.CudaTensor(batchSz,inputDim,croppedSz,croppedSz,croppedSz):fill(bkgValue)

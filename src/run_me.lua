@@ -20,8 +20,8 @@ elseif db == "NYU" then
     dofile "./data/NYU/data.lua"
 elseif db == "MSRA" then
     dofile "./data/MSRA/data.lua"
-elseif db == "HANDS2017" then
-    dofile "./data/HANDS2017/data.lua"
+elseif db == "side" or db == "top" then
+    dofile "./data/ITOP/data.lua"
 end
 
 dofile "util.lua"
@@ -53,7 +53,7 @@ if mode == "train" then
 
     while epoch < epochLimit do
         train()
-        test(testJointWorld, testRefPt, testName, "test")
+        test(testRefPt, testName)
         
         filename = paths.concat(model_dir, "epoch" .. tostring(epoch), model_name)
         os.execute('mkdir -p ' .. sys.dirname(filename))
@@ -75,7 +75,7 @@ if mode == "test" then
     model = torch.load(model_dir .. model_name)
     
     testJointWorld, testRefPt, testName = load_data("test")
-    test(testJointWorld, testRefPt, testName, "test")
+    test(testRefPt, testName)
 
 end
 
