@@ -75,7 +75,7 @@ th rum_me.lua
 ```
 
 * There are some optional configurations you can adjust in the config.lua. 
-* You have to convert the `.png` images to the `.bin` files by running the code of `data` folder.
+* You have to convert the `.png` images of the ICVL and NYU dataset to the `.bin` files by running the code from `data` folder.
 * The directory where you have to put the dataset files and computed centers of each frame is defined in `src/data/dataset_name/data.lua`
 
 # Dataset
