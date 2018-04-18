@@ -68,7 +68,15 @@ git clone https://github.com/mks0601/V2V-PoseNet_RELEASE.git
 * `src` folder contains lua script files for data loader, trainer, tester and other utilities.
 * `data` folder contains data converter which converts image files to the binary files.
 
-This code is only for 3D hand pose estimation. You can change the code slightly to train and test on the ITOP dataset. If you need the code for that, please contact me.
+To train our model, please run the following command in the `src` directory:
+
+    ```bash
+    th rum_me.lua
+    ```
+
+* There are some optional configurations you can adjust in the config.lua. 
+* You have to convert the `.png` images to the `.bin` files by running the code of `data` folder.
+* The directory where you have to put the dataset files and computed centers of each frame is defined in `src/data/dataset_name/data.lua`
 
 ## Dataset
 We trained and tested our model on the four 3D hand pose estimation and one 3D human pose estimation datasets.
@@ -78,16 +86,6 @@ We trained and tested our model on the four 3D hand pose estimation and one 3D h
 * MSRA Hand Pose Dataset [[link](https://jimmysuen.github.io/)] [[paper](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Sun_Cascaded_Hand_Pose_2015_CVPR_paper.pdf)]
 * HANDS2017 Challenge Dataset [[link](http://icvl.ee.ic.ac.uk/hands17/challenge/)] [[paper](https://arxiv.org/abs/1712.03917)]
 * ITOP Human Pose Dataset [[link](https://www.albert.cm/projects/viewpoint_3d_pose/)] [[paper](https://arxiv.org/abs/1603.07076)]
-
-## Training
-
-1. To train our model, please run the following command:
-
-    ```bash
-    th rum_me.lua
-    ```
-
-* There are some optional configurations you can adjust in the config.lua. 
 
 
 # Results
