@@ -1,6 +1,6 @@
 # V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map
 
-## Introduction
+# Introduction
 
 This is our project repository for the paper, **V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map ([CVPR 2018](http://cvpr2018.thecvf.com))**.
 
@@ -78,7 +78,7 @@ To train our model, please run the following command in the `src` directory:
 * You have to convert the `.png` images to the `.bin` files by running the code of `data` folder.
 * The directory where you have to put the dataset files and computed centers of each frame is defined in `src/data/dataset_name/data.lua`
 
-## Dataset
+# Dataset
 We trained and tested our model on the four 3D hand pose estimation and one 3D human pose estimation datasets.
 
 * ICVL Hand Poseture Dataset [[link](https://labicvl.github.io/hand.html)] [[paper](http://www.iis.ee.ic.ac.uk/dtang/cvpr_14.pdf)]
