@@ -70,9 +70,9 @@ git clone https://github.com/mks0601/V2V-PoseNet_RELEASE.git
 
 To train our model, please run the following command in the `src` directory:
 
-    ```bash
-    th rum_me.lua
-    ```
+```bash
+th rum_me.lua
+```
 
 * There are some optional configurations you can adjust in the config.lua. 
 * You have to convert the `.png` images to the `.bin` files by running the code of `data` folder.
