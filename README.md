@@ -95,13 +95,11 @@ The precomputed centers are obtained by training the network from [DeepPrior++ ]
 
 The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates.
 
-If you want a pretrained model, please contact me.
-
-* ICVL Hand Poseture Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/coordinate/result.txt)]
-* NYU Hand Pose Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/coordinate/result.txt)]
-* MSRA Hand Pose Dataset [[center](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/center/center.tar.gz)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/coordinate/result.txt)]
-* ITOP Human Pose Dataset (front-view) [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/center/center_train.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/center/center_test.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/coordinate/result.txt)]
-* ITOP Human Pose Dataset (side-view) [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/center/center_train.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/center/center_test.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/coordinate/result.txt)]
+* ICVL Hand Poseture Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/model/model.tar.gz)]
+* NYU Hand Pose Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/model/model.tar.gz)]
+* MSRA Hand Pose Dataset [[center](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/center/center.tar.gz)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/model/model.tar.gz)]
+* ITOP Human Pose Dataset (front-view) [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/center/center_train.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/center/center_test.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/model/model.tar.gz)]
+* ITOP Human Pose Dataset (side-view) [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/center/center_train.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/center/center_test.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/model/model.tar.gz)]
 
 We used [awesome-hand-pose-estimation ](https://github.com/xinghaochen/awesome-hand-pose-estimation) to evaluate the accuracy of the V2V-PoseNet on the ICVL, NYU and MSRA dataset.
 
