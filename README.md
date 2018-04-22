@@ -89,7 +89,7 @@ We trained and tested our model on the four 3D hand pose estimation and one 3D h
 
 
 # Results
-Here we provide the precomputed centers, and estimated 3D coordinates.
+Here we provide the precomputed centers, estimated 3D coordinates and pre-trained models.
 
 The precomputed centers are obtained by training the network from [DeepPrior++ ](https://arxiv.org/pdf/1708.08325.pdf). Each line represents 3D world coordinate of each frame.
 
