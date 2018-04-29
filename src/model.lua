@@ -57,7 +57,7 @@ end
 
 function build_3DupsampleBlock(prev_fDim,next_fDim,kernelSz,str)
     
- 	local module = nn.Sequential()
+    local module = nn.Sequential()
     
     module:add(cudnn.normal3DdeConv(prev_fDim,next_fDim,kernelSz,kernelSz,kernelSz,str,str,str,(kernelSz-1)/2,(kernelSz-1)/2,(kernelSz-1)/2,str-1,str-1,str-1,0,0.001))
     module:add(cudnn.VolumetricBatchNormalization(next_fDim))
@@ -71,37 +71,37 @@ function build_model()
 	
     local module = nn.Sequential()
 
-	concat1 = nn.ConcatTable()
-	branch1 = nn.Sequential()
+    concat1 = nn.ConcatTable()
+    branch1 = nn.Sequential()
 
-	branch1:add(build_3DpoolBlock(2))
-	branch1:add(build_3DResBlock(32,64))
+    branch1:add(build_3DpoolBlock(2))
+    branch1:add(build_3DResBlock(32,64))
 
-	concat2 = nn.ConcatTable()
-	branch2 = nn.Sequential()
+    concat2 = nn.ConcatTable()
+    branch2 = nn.Sequential()
 
-	branch2:add(build_3DpoolBlock(2))
-	branch2:add(build_3DResBlock(64,128))
-	branch2:add(build_3DResBlock(128,128))
-	branch2:add(build_3DResBlock(128,128))
+    branch2:add(build_3DpoolBlock(2))
+    branch2:add(build_3DResBlock(64,128))
+    branch2:add(build_3DResBlock(128,128))
+    branch2:add(build_3DResBlock(128,128))
     branch2:add(build_3DupsampleBlock(128,64,2,2))
 
-	concat2:add(branch2)
-	concat2:add(build_3DResBlock(64,64))
+    concat2:add(branch2)
+    concat2:add(build_3DResBlock(64,64))
 
-	branch1:add(concat2)
-	branch1:add(nn.CAddTable())
+    branch1:add(concat2)
+    branch1:add(nn.CAddTable())
     
-	branch1:add(build_3DResBlock(64,64))
-	branch1:add(build_3DupsampleBlock(64,32,2,2))
+    branch1:add(build_3DResBlock(64,64))
+    branch1:add(build_3DupsampleBlock(64,32,2,2))
 
-	concat1:add(branch1)
-	concat1:add(build_3DResBlock(32,32))
+    concat1:add(branch1)
+    concat1:add(build_3DResBlock(32,32))
 
-	module:add(concat1)
-	module:add(nn.CAddTable())
+    module:add(concat1)
+    module:add(nn.CAddTable())
     
-	module:add(build_3DResBlock(32,32))
+    module:add(build_3DResBlock(32,32))
     module:add(build_3DBlock(32,32,1))
     module:add(build_3DBlock(32,32,1)) 
 
