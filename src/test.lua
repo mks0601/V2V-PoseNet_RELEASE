@@ -55,7 +55,12 @@ function test(testRefPt, testName)
 
         --xyzOutput is 3D joint coordinates (final output) in world coordinate system
         --you need to convert them into pixel coordinate system if needed
+        --write save code here
         
+        
+        
+        --type convert to the original type
+        xyzOutput = xyzOutput:type('torch.CudaLongTensor')
         
     end
     
