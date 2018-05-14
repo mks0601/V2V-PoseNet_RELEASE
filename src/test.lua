@@ -53,9 +53,9 @@ function test(testRefPt, testName)
             xyzOutput[bid] = warp2continuous(xyzOutput[bid],refPts[bid])           
         end
 
-        --this is 3D joint coordinates (final output) in world coordinate system
+        --xyzOutput is 3D joint coordinates (final output) in world coordinate system
         --you need to convert them into pixel coordinate system if needed
-        xyzOutput = xyzOutput:type('torch.CudaLongTensor')
+        
         
     end
     
