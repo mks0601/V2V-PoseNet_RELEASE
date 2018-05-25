@@ -91,7 +91,10 @@ We trained and tested our model on the four 3D hand pose estimation and one 3D h
 # Results
 Here we provide the precomputed centers, estimated 3D coordinates and pre-trained models.
 
-The precomputed centers are obtained by training the network from [DeepPrior++ ](https://arxiv.org/pdf/1708.08325.pdf). Each line represents 3D world coordinate of each frame.
+The precomputed centers are obtained by training the hand center estimation network from [DeepPrior++ ](https://arxiv.org/pdf/1708.08325.pdf). Each line represents 3D world coordinate of each frame.
+In case of ICVL, NYU, MSRA dataset, if depth map is not exist or not contain hand, that frame is considered as invalid.
+In case of ITOP dataset, if 'valid' variable of a certain frame is false, that frame is considered as invalid.
+All test images are considered as valid.
 
 The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates.
 
