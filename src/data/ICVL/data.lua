@@ -160,7 +160,7 @@ function load_data(db_type)
             splitted = str_split(RefPt_[fileId]," ")
             if splitted[1] == "invalid" then
                 invalidFrameNum = invalidFrameNum + 1
-                goto INVALIDFRAME_TRAIN
+                goto INVALIDFRAME_TEST1
             else
                 RefPt[fid][1] = splitted[1]
                 RefPt[fid][2] = splitted[2]
@@ -193,7 +193,7 @@ function load_data(db_type)
             splitted = str_split(RefPt_[fileId]," ")
             if splitted[1] == "invalid" then
                 invalidFrameNum = invalidFrameNum + 1
-                goto INVALIDFRAME_TRAIN
+                goto INVALIDFRAME_TEST2
             else
                 RefPt[fid][1] = splitted[1]
                 RefPt[fid][2] = splitted[2]
