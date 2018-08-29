@@ -97,7 +97,7 @@ In case of ICVL, NYU, MSRA dataset, if depth map is not exist or not contain han
 In case of ITOP dataset, if 'valid' variable of a certain frame is false, that frame is considered as invalid.
 All test images are considered as valid.
 
-The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates.
+The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates. The estimated results are from ensembled model. You can make the results from a single model by downloading the pre-trained model and testing it.
 
 * ICVL Hand Poseture Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/model/model.tar.gz)]
 * NYU Hand Pose Dataset [[center_trainset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_train_refined.txt)] [[center_testset](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_test_refined.txt)] [[estimation](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/coordinate/result.txt)] [[models](http://cv.snu.ac.kr/research/V2V-PoseNet/NYU/model/model.tar.gz)]
