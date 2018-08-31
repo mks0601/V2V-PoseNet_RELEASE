@@ -14,6 +14,7 @@ function test(testRefPt, testName)
     inputs_cuda = torch.CudaTensor(batchSz,inputDim,croppedSz,croppedSz,croppedSz):fill(bkgValue)
     refPts = torch.Tensor(batchSz,worldDim):zero()
     xyzOutput = torch.CudaLongTensor(batchSz,jointNum,worldDim):zero()
+    fp_result = io.open("result.txt","w")
 
     for t = 1,testDataSz,batchSz do
         
@@ -56,13 +57,18 @@ function test(testRefPt, testName)
         --xyzOutput is 3D joint coordinates (final output) in world coordinate system
         --you need to convert them into pixel coordinate system if needed
         --write save code here
-        
-        
-        
+        xyzOutput[{{},{},{1}}],xyzOutput[{{},{},{2}}] = world2pixel(xyzOutput[{{},{},{1}}],xyzOutput[{{},{},{2}}],xyzOutput[{{},{},{3}}])
+        for bid = 1,curBatchNum do
+            for jid = 1,jointNum do
+                fp_result:write(tostring(xyzOutput[bid][jid][1])," ",tostring(xyzOutput[bid][jid][2])," ",tostring(xyzOutput[bid][jid][3])," ")
+            end
+            fp_result:write("\n")
+        end
+ 
         --type convert to the original type
         xyzOutput = xyzOutput:type('torch.CudaLongTensor')
         
     end
-    
+    fp_result:close() 
 
 end
