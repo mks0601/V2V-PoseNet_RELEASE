@@ -125,16 +125,19 @@ function load_data(db_type)
 	 	for line in io.lines(center_dir .. "center_train_" .. tostring(test_model) .. "_refined.txt") do
             table.insert(RefPt_,line)
         end
+	jointWorld = torch.Tensor(trainSz,jointNum,worldDim):zero()
+    	RefPt = torch.Tensor(trainSz,worldDim):zero()
     elseif db_type == "test" then
         print("testing data loading...")
         RefPt_ = {}
 	 	for line in io.lines(center_dir .. "center_test_" .. tostring(test_model) .. "_refined.txt") do
             table.insert(RefPt_,line)
         end
+	jointWorld = torch.Tensor(testSz,jointNum,worldDim):zero()
+    	RefPt = torch.Tensor(testSz,worldDim):zero()
     end
     
-    jointWorld = torch.Tensor(trainSz,jointNum,worldDim):zero()
-    RefPt = torch.Tensor(trainSz,worldDim):zero()
+
     name = {}
     
     fileId = 1
