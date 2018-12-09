@@ -1,8 +1,8 @@
 # V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map
 
-**PyTorch re-implementation of the V2V-PoseNet is avaiable at dragonbook's [repo](https://github.com/dragonbook/V2V-PoseNet-pytorch).**
+**PyTorch re-implementation of the V2V-PoseNet is available at dragonbook's [repo](https://github.com/dragonbook/V2V-PoseNet-pytorch).**
 
-Thank dragonbook for re-implementation. Other versions of the V2V-PoseNet repo are also welcome!
+Thanks dragonbook for re-implementation. Other versions of the V2V-PoseNet are also welcome!
 
 # Introduction
 
