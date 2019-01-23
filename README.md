@@ -79,7 +79,7 @@ th rum_me.lua
 ```
 
 * There are some optional configurations you can adjust in the config.lua. 
-* You have to convert the `.png` images of the ICVL and NYU dataset to the `.bin` files by running the code from `data` folder.
+* You have to convert the `.png` images of the ICVL, NYU, and HANDS 2017 dataset to the `.bin` files by running the code from `data` folder.
 * The directory where you have to put the dataset files and computed centers of each frame is defined in `src/data/dataset_name/data.lua`
 * Visualization code is finally uploaded! You have to prepare 'result_pixel.txt' for each dataset. Each row of the result file has to contain the pixel coordinates of x, y and depth of all joints (i.e, x1 y1 z1 x2 y2 z2 ...). Then run pixel2world script and run draw_DB.m
 
