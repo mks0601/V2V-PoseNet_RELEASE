@@ -97,15 +97,16 @@ We trained and tested our model on the four 3D hand pose estimation and one 3D h
 Here we provide the precomputed centers, estimated 3D coordinates and pre-trained models.
 
 The precomputed centers are obtained by training the hand center estimation network from [DeepPrior++ ](https://arxiv.org/pdf/1708.08325.pdf). Each line represents 3D world coordinate of each frame.
-In case of ICVL, NYU, MSRA dataset, if depth map is not exist or not contain hand, that frame is considered as invalid.
+In case of ICVL, NYU, MSRA, and HANDS2017 dataset, if depth map is not exist or not contain hand, that frame is considered as invalid.
 In case of ITOP dataset, if 'valid' variable of a certain frame is false, that frame is considered as invalid.
 All test images are considered as valid.
 
-The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the ITOP datasets are world coordinates. The estimated results are from ensembled model. You can make the results from a single model by downloading the pre-trained model and testing it.
+The 3D coordinates estimated on the ICVL, NYU and MSRA datasets are pixel coordinates and the 3D coordinates estimated on the HANDS2017 and ITOP datasets are world coordinates. The estimated results are from ensembled model. You can make the results from a single model by downloading the pre-trained model and testing it.
 
 * ICVL Hand Poseture Dataset [[center_trainset](https://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_train_refined.txt)] [[center_testset](https://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/center/center_test_refined.txt)] [[estimation](https://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/coordinate/result.txt)] [[models](https://cv.snu.ac.kr/research/V2V-PoseNet/ICVL/model/model.tar.gz)]
 * NYU Hand Pose Dataset [[center_trainset](https://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_train_refined.txt)] [[center_testset](https://cv.snu.ac.kr/research/V2V-PoseNet/NYU/center/center_test_refined.txt)] [[estimation](https://cv.snu.ac.kr/research/V2V-PoseNet/NYU/coordinate/result.txt)] [[models](https://cv.snu.ac.kr/research/V2V-PoseNet/NYU/model/model.tar.gz)]
 * MSRA Hand Pose Dataset [[center](https://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/center/center.tar.gz)] [[estimation](https://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/coordinate/result.txt)] [[models](https://cv.snu.ac.kr/research/V2V-PoseNet/MSRA/model/model.tar.gz)]
+* HANDS2017 Hand Pose Challenge Dataset [[center_trainset](https://cv.snu.ac.kr/research/V2V-PoseNet/HANDS2017/center/center_train_refined.txt)] [[center_testset](https://cv.snu.ac.kr/research/V2V-PoseNet/HANDS2017/center/center_test_refined.txt)] [[estimation](https://cv.snu.ac.kr/research/V2V-PoseNet/HANDS2017/coordinate/result.txt)] [[models](https://cv.snu.ac.kr/research/V2V-PoseNet/HANDS2017/model/model.tar.gz)]
 * ITOP Human Pose Dataset (front-view) [[center_trainset](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/center/center_train.txt)] [[center_testset](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/center/center_test.txt)] [[estimation](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/coordinate/result.txt)] [[models](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_front/model/model.tar.gz)]
 * ITOP Human Pose Dataset (top-view) [[center_trainset](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/center/center_train.txt)] [[center_testset](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/center/center_test.txt)] [[estimation](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/coordinate/result.txt)] [[models](https://cv.snu.ac.kr/research/V2V-PoseNet/ITOP_top/model/model.tar.gz)]
 

@@ -20,6 +20,8 @@ elseif db == "NYU" then
     dofile "./data/NYU/data.lua"
 elseif db == "MSRA" then
     dofile "./data/MSRA/data.lua"
+elseif db == 'HANDS2017' then
+    dofile "./data/HANDS2017/data.lua"
 elseif db == "side" or db == "top" then
     dofile "./data/ITOP/data.lua"
 end
