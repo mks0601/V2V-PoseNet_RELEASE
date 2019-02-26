@@ -36,7 +36,7 @@ std = 1.7
 lr = 2.5e-4
 aph = 0.99
 eps = 1e-8
-batchSz = 1
+batchSz = 8
 
 --predmade grid tensor
 d3Output_x = torch.view(torch.range(1,croppedSz/poolFactor),1,1,croppedSz/poolFactor):repeatTensor(croppedSz/poolFactor,croppedSz/poolFactor,1):type('torch.CudaTensor')
