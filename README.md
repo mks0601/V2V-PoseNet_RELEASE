@@ -1,3 +1,10 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/v2v-posenet-voxel-to-voxel-prediction-network/hand-pose-estimation-on-hands-2017)](https://paperswithcode.com/sota/hand-pose-estimation-on-hands-2017?p=v2v-posenet-voxel-to-voxel-prediction-network)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/v2v-posenet-voxel-to-voxel-prediction-network/hand-pose-estimation-on-icvl-hands)](https://paperswithcode.com/sota/hand-pose-estimation-on-icvl-hands?p=v2v-posenet-voxel-to-voxel-prediction-network)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/v2v-posenet-voxel-to-voxel-prediction-network/pose-estimation-on-itop-front-view)](https://paperswithcode.com/sota/pose-estimation-on-itop-front-view?p=v2v-posenet-voxel-to-voxel-prediction-network)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/v2v-posenet-voxel-to-voxel-prediction-network/pose-estimation-on-itop-top-view)](https://paperswithcode.com/sota/pose-estimation-on-itop-top-view?p=v2v-posenet-voxel-to-voxel-prediction-network)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/v2v-posenet-voxel-to-voxel-prediction-network/hand-pose-estimation-on-nyu-hands)](https://paperswithcode.com/sota/hand-pose-estimation-on-nyu-hands?p=v2v-posenet-voxel-to-voxel-prediction-network)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/v2v-posenet-voxel-to-voxel-prediction-network/hand-pose-estimation-on-msra-hands)](https://paperswithcode.com/sota/hand-pose-estimation-on-msra-hands?p=v2v-posenet-voxel-to-voxel-prediction-network)
+
 # V2V-PoseNet: Voxel-to-Voxel Prediction Network for Accurate 3D Hand and Human Pose Estimation from a Single Depth Map
 
 **PyTorch re-implementation of the V2V-PoseNet is available at dragonbook's [repo](https://github.com/dragonbook/V2V-PoseNet-pytorch).**
