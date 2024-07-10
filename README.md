@@ -101,7 +101,7 @@ We trained and tested our model on the four 3D hand pose estimation and one 3D h
 
 
 # Results
-Here we provide the precomputed centers, estimated 3D coordinates and pre-trained models of ICVL, NYU, MSRA, HANDS2017, and ITOP datasets. You can download precomputed centers and 3D hand pose results in [here](https://1drv.ms/f/s!All7gdNh7XE5nD36MAzlKiXnV3lR?e=LAR9Ag) and pre-trained models in [here](https://1drv.ms/f/s!All7gdNh7XE5nGLfdN9pFLioROWI?e=2ar1pI)
+Here we provide the precomputed centers, estimated 3D coordinates and pre-trained models of ICVL, NYU, MSRA, HANDS2017, and ITOP datasets. You can download precomputed centers and 3D hand pose results in [here](https://drive.google.com/drive/folders/18Q1WmFuLGP9WtUShgD0s4Th4aykHQGMT?usp=sharing) and pre-trained models in [here](https://drive.google.com/drive/folders/1P2q4_1G51f0pMTJhoTkl_QXg2t328_TZ?usp=sharing)
 
 The precomputed centers are obtained by training the hand center estimation network from [DeepPrior++ ](https://arxiv.org/pdf/1708.08325.pdf). Each line represents 3D world coordinate of each frame.
 In case of ICVL, NYU, MSRA, and HANDS2017 dataset, if depth map not exist or not contain hand, that frame is considered as invalid.
